@@ -1,7 +1,8 @@
-const env = process.env.NODE_ENV // process 就是环境进程 在进程里面得到环境
+const env = process.env.NODE_ENV
 
 let DATABASE_CONFIG
 let RADIS_CONFIG
+
 if (env === 'dev') {
   //mysql
   DATABASE_CONFIG = {
